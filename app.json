@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "App de Currículo ",
+    "githubUrl": "https://github.com/jviictor/Curriculo.git"
   }
 }

@@ -87,13 +87,21 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
   
-   <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Hobbies" component={Hobbies}  options={{ title: 'Hobbies' }}/>
-          <Stack.Screen name="Extras" component={Extras}  options={{ title: 'Extras' }}/>
+    <NavigationContainer>
+    <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} 
+        options={{
+          headerStyle:{backgroundColor:"#E6E6FA"},
+          headerTitleStyle:{fontWeight:'bold'},
+        }}
+        />
+        <Stack.Screen name="Hobbies" component={Hobbies}  options={{ title: 'Hobbies',                headerStyle:{backgroundColor:"#E6E6FA"},
+          headerTitleStyle:{fontWeight:'bold'} }}
+        />
+        <Stack.Screen name="Extras" component={Extras}  options={{ title: 'Extras',                   headerStyle:{backgroundColor:"#E6E6FA"},
+          headerTitleStyle:{fontWeight:'bold'} }}/>
       </Stack.Navigator>
-   </NavigationContainer>
+    </NavigationContainer>
     
   );
 }
